@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Wiki Search</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2013/10/01/16/55/magnifying-glass-189254_1280.png">
+    <style>
+    	#heading {
+    		text-align: center;
+    		position:relative;
+    		top:40px;
+    		color:black;
+    	}
+    	a.nounderline {text-decoration: none; }
+    	
+    	
+   		p { margin-left:5em; margin-right:5em; line-height: 1.5em; margin-top: 3em; margin-bottom: 2em;}
+  
+    
+    </style>
+</head>
+<body style="background-color:ghostwhite;">
+	
+  	<h1 id="heading" th:text="${docTitle}">
+  	</h1>
+	
+	
+	<p class="mb-1" th:utext="${text}"></p>
+	
+</body>
+</html>
